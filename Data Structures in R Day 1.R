@@ -94,41 +94,37 @@ addmargins(m1,c(1,2),mean)
 addmargins(m1,c(1,2),list(list(mean,sum,max),list(var,sd)))
 
 #ffghf
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 #Arrays----
 
 #Data Frames----
+(rollno=1:30)
+(sname=paste('student',1:30,sep=""))
+(gender=sample(c('M','F'),size = 30,replace = T,prob = c(0.7,0.3)))
+(marks=floor(rnorm(30,mean=50,sd=10)))
+(marks2=ceiling(rnorm(30,40,10)))
+(course=sample(c("BBA","MBA"),size = 30,replace = T,prob = c(0.5,0.5)))
+df1=data.frame(rollno,sname,gender,marks,marks2,course,stringsAsFactors = F)
+str(df1)
+df1
+head(df1)
+head(df1,n=3)
+
+
+
+#ff
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 #Lists----
 
