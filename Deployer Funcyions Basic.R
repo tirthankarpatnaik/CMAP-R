@@ -10,3 +10,4 @@ mtcars %>% group_by(am) %>% summarise(mean(wt))
 
 summarise(group_by(mtcars,am),mean(wt))
 
+slice(mtcars,12:n())
